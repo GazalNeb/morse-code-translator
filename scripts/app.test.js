@@ -9,7 +9,7 @@ describe("morseCodeConverter function tests", () => {
     //Act
     const result = morseCodeConverter(input);
     //Assert 
-    expect(result).toBe(". _")
+    expect(result).toBe("._")
   })
   it("Should convert a single word to morse code", () => {
     //Arrange
@@ -17,7 +17,7 @@ describe("morseCodeConverter function tests", () => {
     //Act
     const result = morseCodeConverter(input);
     //Assert 
-    expect(result).toBe(".... . .-.. .-.. ---")
+    expect(result).toBe(".... . ._.. ._.. ___")
  })
   it("Should convert a sentence to morse code", () => {
      //Arrange
@@ -25,7 +25,7 @@ describe("morseCodeConverter function tests", () => {
      //Act
      const result = morseCodeConverter(input);
      //Assert 
-     expect(result).toBe(".... . .-.. .-.. --- / .. / .- -- / --. .- --.. .- .-..")
+     expect(result).toBe(".... . ._.. ._.. ___ / .. / ._ __ / __. ._ __.. ._ ._..")
   })
   it("Should convert a number to morse code", () => {
       //Arrange
@@ -33,7 +33,7 @@ describe("morseCodeConverter function tests", () => {
       //Act
       const result = morseCodeConverter(input);
       //Assert 
-      expect(result).toBe(".---- -----")
+      expect(result).toBe(".____ _____")
   })
   it("Should give an error if input is empty", () => {
     //Arrange
