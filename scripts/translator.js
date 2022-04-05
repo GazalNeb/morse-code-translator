@@ -1,6 +1,6 @@
 import {morseCodeConverter} from "./app.js";
 
-const submitButton = document.querySelector(".submit");
+const submitButton = document.querySelector(".submit-button");
 const input = document.querySelector("input");
 
 submitButton.addEventListener("click", (event) => {
