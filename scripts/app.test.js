@@ -50,5 +50,13 @@ describe("morseCodeConverter function tests", () => {
   const result = morseCodeConverter(input);
   //Assert 
   expect(result).toBe("Input is undefined")
-})
+ })
+ it("Should give an error if input contains an invalid character", () => {
+  //Arrange
+  let input = "&";
+  //Act
+  const result = morseCodeConverter(input);
+  //Assert 
+  expect(result).toBe("Input contains invalid character")
+ })
 })
