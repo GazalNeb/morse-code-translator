@@ -1,4 +1,3 @@
-const getData = () => {
   const dictionaryOfMorseCodeByCharacter = {
     "A":". _", 
     "B":"_ . . .", 
@@ -27,4 +26,4 @@ const getData = () => {
     "Y":"_ . _ _", 
     "Z":"_ _ . .",  
   }
-};
+ 
