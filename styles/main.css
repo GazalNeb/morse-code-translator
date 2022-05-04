@@ -32,8 +32,6 @@
   background-color: #fafafa;
   font-family: "sans-serif";
   font-size: large;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .translate-button {
