@@ -1,10 +1,11 @@
 import {morseCodeConverter} from "./app.js";
 
-const submitButton = document.querySelector(".submit-button");
-const input = document.querySelector("input");
+const translateButton = document.querySelector(".translate-button");
+const inputText = document.getElementById("text-input");
+const inputMorseCode = document.getElementById("morse-code-input");
 
-submitButton.addEventListener("click", (event) => {
+translateButton.addEventListener("click", (event) => {
   console.log("hello");
-  let outputValue = morseCodeConverter(input.value);
-  input.value = outputValue;
+  let outputValue = morseCodeConverter(inputText.value);
+  inputMorseCode.value = outputValue;
 });
